@@ -4,8 +4,9 @@ import net.minecraft.enchantment.Enchantment;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import pooter.pot.pie.StompingGround.StompingGround;
 
-@Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid= StompingGround.MODID, bus=Mod.EventBusSubscriber.Bus.MOD)
 public class ModEnchantmentsRegistry {
     public static SwinglineInator SWINGLINEINATOR;
     public static ConcussiveInator CONCUSSIVEINATOR;

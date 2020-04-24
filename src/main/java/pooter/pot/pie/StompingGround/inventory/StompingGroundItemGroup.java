@@ -8,18 +8,20 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.util.NonNullList;
 import pooter.pot.pie.StompingGround.enchantment.ModEnchantmentsRegistry;
+import pooter.pot.pie.StompingGround.items.ItemRegistry;
 
 import java.util.Map;
 import java.util.function.Supplier;
 
 public class StompingGroundItemGroup extends ItemGroup {
-
+    public static StompingGroundItemGroup STOMPING_GROUND;
     public final Supplier<ItemStack> iconSupplier;
 
     public StompingGroundItemGroup(String name, Supplier<ItemStack> supplier) {
         super(name);
         this.iconSupplier = supplier;
         this.setTabPath("stomping_ground");
+        STOMPING_GROUND =  this;
     }
 
     @Override
@@ -30,6 +32,10 @@ public class StompingGroundItemGroup extends ItemGroup {
     @Override
     public void fill(NonNullList<ItemStack> items) {
 
+
+        items.add(new ItemStack(ItemRegistry.boneFragmentItem));
+
+        //Enchantments
         NonNullList<ItemStack> enchantedBooks = NonNullList.create();
 
         Items.ENCHANTED_BOOK.fillItemGroup(ItemGroup.SEARCH, enchantedBooks);
@@ -41,6 +47,8 @@ public class StompingGroundItemGroup extends ItemGroup {
                 items.add(item);
             }
         }
+
+
 
     }
 

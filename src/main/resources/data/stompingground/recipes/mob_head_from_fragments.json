@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "tag": "stompinggrounds:items/bone_fragment"
+    }
+  },
+  "result":
+  {
+    "item": "minecraft:SkullItem",
+    "count": 1
+  }
+}
