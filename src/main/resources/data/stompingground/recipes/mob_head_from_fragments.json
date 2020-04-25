@@ -10,12 +10,12 @@
   {
     "x":
     {
-      "tag": "stompinggrounds:items/bone_fragment"
+      "item": "stompingground:bone_fragment"
     }
   },
   "result":
   {
-    "item": "minecraft:SkullItem",
+    "item": "minecraft:skeleton_skull",
     "count": 1
   }
 }

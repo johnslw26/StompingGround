@@ -33,7 +33,7 @@ public class StompingGroundItemGroup extends ItemGroup {
     public void fill(NonNullList<ItemStack> items) {
 
 
-        items.add(new ItemStack(ItemRegistry.boneFragmentItem));
+        items.add(new ItemStack(ItemRegistry.skullFragmentItem));
 
         //Enchantments
         NonNullList<ItemStack> enchantedBooks = NonNullList.create();
